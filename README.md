@@ -1,12 +1,52 @@
 # BostonHousePrice-Regression
-Boston House Price Prediction using Regression Models
+🏡 Boston House Price Prediction Project
+Tools Used: Python, Pandas, Seaborn, Matplotlib, Scikit-learn, XGBoost
+Project Type: Regression (Supervised Machine Learning)
 
-This project explores the Boston Housing Dataset to predict house prices using various Machine Learning regression models. The workflow includes data preprocessing, exploratory data analysis (EDA), feature engineering, and model training using:
+Objective:
+Predict housing prices in the city of Boston based on a range of demographic and social features using various machine learning models.
 
-✅ Linear Regression
-✅ Random Forest Regressor
-✅ XGBoost Regressor
+Steps & Highlights:
 
-🔹 Tools & Libraries: Pandas, Seaborn, Matplotlib, Scikit-Learn, XGBoost
-🔹 Performance Metrics: R² Score, Mean Squared Error (MSE)
-🔹 Next Steps: Hyperparameter tuning & model deployment 🚀
+✅ Data Preprocessing:
+
+Imported the dataset from a CSV file.
+
+Removed unnecessary columns.
+
+Checked and confirmed there were no missing values.
+
+Applied Normalization and Standardization according to model requirements.
+
+📊 Exploratory Data Analysis (EDA):
+
+Performed statistical analysis using .describe() and .info().
+
+Created a correlation heatmap to understand feature relationships.
+
+Plotted distribution graphs for all features.
+
+Analyzed the relationship between number of rooms, income level, and house prices.
+
+🔍 Modeling:
+
+Linear Regression:
+
+Used normalized data.
+
+Results: R² = 0.67, MSE = 24.29
+
+Random Forest Regressor:
+
+Used standardized data.
+
+Results: R² = 0.89, MSE = 7.84
+
+XGBoost Regressor:
+
+Used standardized data.
+
+Results: R² = 0.91, MSE = 6.42
+
+Conclusion:
+Three models were compared, and XGBoost outperformed the others in prediction accuracy. This highlights the importance of selecting the right model based on the nature of the data and the problem.
